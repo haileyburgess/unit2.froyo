@@ -9,3 +9,17 @@ const stringArray = userInputString.split(",");
 console.log(stringArray);
 
 // build an object to track flavors
+//list out the values 
+for (const key in stringArray) {
+console.log(`value: ${stringArray[key]}`)
+}
+//count the values
+// function to hold the key/values
+const flavorCounts = {};
+  
+//loop through the array to see if the value is there, and if it hasn't been counted, add 1
+const countFlavors = (key, value) => {
+    const obj = {};
+    obj[key] = value;
+    return obj;
+  };
