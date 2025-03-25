@@ -23,3 +23,9 @@ const countFlavors = (key, value) => {
     obj[key] = value;
     return obj;
   };
+// for stringArray, look for values
+// for (const flavor of stringArray) {
+//     key == 1 
+// if exists increase by 1 
+// }
+// console.log(flavorCounts);
