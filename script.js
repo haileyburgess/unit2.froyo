@@ -18,11 +18,19 @@ console.log(`value: ${stringArray[key]}`)
 const flavorCounts = {};
   
 //loop through the array to see if the value is there, and if it hasn't been counted, add 1
-const countFlavors = (key, value) => {
-    const obj = {};
-    obj[key] = value;
-    return obj;
+const countFlavors = () => {
+    const counts = {};
+    for (const flavor of stringArray) {
+        if(counts[flavor]){
+            counts[flavor]++;
+        }
+        else {
+            counts[flavor] = 1;
+        }
+    }
+    return counts
   };
+  console.table(countFlavors());
 // for stringArray, look for values
 // for (const flavor of stringArray) {
 //     key == 1 
